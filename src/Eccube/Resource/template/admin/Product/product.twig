@@ -280,7 +280,8 @@ file that was distributed with this source code.
                         </div>
                         <div class="collapse show ec-cardCollapse" id="basicConfig">
                             <div class="card-body">
-                                {% if Product.id %}
+                                
+                                    {% if Product.id %}
                                     <div class="row">
                                         <div class="col-3">
                                             <div class="d-inline-block" data-tooltip="true" data-placement="top" title="{{ 'tooltip.product.product_id'|trans }}">
@@ -288,11 +289,13 @@ file that was distributed with this source code.
                                                 <i class="fa fa-question-circle fa-lg ml-1"></i>
                                             </div>
                                         </div>
-                                        <div class="col">
-                                            <p>{{ Product.id }}</p>
-                                        </div>
+                                        <div class="col mb-2">
+                                        {{ form_widget(form.id) }}
+                                        {{ form_errors(form.id) }}
+                                    </div>
                                     </div>
                                 {% endif %}
+
                                 <div class="row">
                                     <div class="col-3">
                                         <div class="d-inline-block">
@@ -307,6 +310,22 @@ file that was distributed with this source code.
                                         {{ form_errors(form.name) }}
                                     </div>
                                 </div>
+
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="d-inline-block">
+                                            <span>{{ 'admin.product.delivery_date'|trans }}</span>
+                                            <span class="badge badge-primary ml-1">
+                                                {{ 'admin.common.required'|trans }}
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-2">
+                                        {{ form_widget(form.delivery_date) }}
+                                        {{ form_errors(form.delivery_date) }}
+                                    </div>
+                                </div>
+                                
                                 {% if has_class == false %}
                                     <div class="row">
                                         <div class="col-3">
@@ -513,6 +532,8 @@ file that was distributed with this source code.
                                             </div>
                                         </div>
                                     </div>
+
+                                      
 
                                     {% if BaseInfo.option_product_delivery_fee %}
                                         <div class="row">

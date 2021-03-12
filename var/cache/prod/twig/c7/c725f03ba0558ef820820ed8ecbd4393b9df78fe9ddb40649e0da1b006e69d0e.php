@@ -245,6 +245,6 @@ class __TwigTemplate_a52f570f3ed5b5ec2f8211aabf799d378ef93fbd0e1120e9ca86af3bccc
 
     public function getSourceContext()
     {
-        return new Source("", "@admin/default_frame.twig", "C:\\xampp\\htdocs\\onlineorder\\src\\Eccube\\Resource\\template\\admin\\default_frame.twig");
+        return new Source("", "@admin/default_frame.twig", "C:\\xampp\\htdocs\\eccubeojt\\src\\Eccube\\Resource\\template\\admin\\default_frame.twig");
     }
 }

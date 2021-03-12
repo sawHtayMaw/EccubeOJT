@@ -61,6 +61,6 @@ var eccube_lang = {
 
     public function getSourceContext()
     {
-        return new Source("", "@common/lang.twig", "C:\\xampp\\htdocs\\onlineorder\\src\\Eccube\\Resource\\template\\common\\lang.twig");
+        return new Source("", "@common/lang.twig", "C:\\xampp\\htdocs\\eccubeojt\\src\\Eccube\\Resource\\template\\common\\lang.twig");
     }
 }

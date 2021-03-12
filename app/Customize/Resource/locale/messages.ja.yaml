@@ -1,0 +1,97 @@
+#====================================================================================
+# 管理画面
+#====================================================================================
+common.yes: 有り
+common.no: 無し
+
+common.mail_address_sample: 例：sample@sample.com
+
+#------------------------------------------------------------------------------------
+# Products
+#------------------------------------------------------------------------------------
+front.product.popup.cancel: キャンセルする
+
+front.shopping.guest_receipt_message: ※ゲスト挿入の場合、領収書が発行されませんのでご注意ください。
+
+#====================================================================================
+# 管理画面
+#====================================================================================
+# 汎用ラベル, メッセージ
+admin.common.csv_invalid_duplicate: '%line%行目の%name%は重複しています'
+
+# エンティティに関連するラベル
+admin.common.start_id: このIDから始まるcategory_idを設定できます。
+
+#------------------------------------------------------------------------------------
+# 商品管理
+#------------------------------------------------------------------------------------
+
+# ラベル/メッセージ
+admin.product.brand: ブランド
+
+admin.product.package_count: 梱包数
+admin.product.assembly_time: 組み立て時間
+admin.product.hl_flag: HL商品
+
+admin.product.popup__card_title: ポップアップ表示
+admin.product.popup_status: ポップアップステータス
+admin.product.popup_content: ポップアップコンテンツ
+
+admin.product.color_status: カラーステータス
+admin.product.class_category_show_name: 表示名
+admin.product.class_category_line_color_name: ラインカラー名
+admin.product.class_category_color_category: カラーカテゴリー
+admin.product.class_category_line: ライン
+admin.product.class_category_line_color: ラインカラー
+admin.product.class_category_line2: ライン2
+admin.product.class_category_line_color2: ラインカラー2
+admin.product.class_category_line3: ライン3
+admin.product.class_category_line_color3: ラインカラー3
+admin.product.class_category_grain_direction: 木目方向
+admin.product.class_category_wood_color1: 木口カラー1
+admin.product.class_category_wood_color2: 木口カラー2
+admin.product.class_category_worktop_color: ワークトップカラー
+admin.product.class_category_tabletop_color: テーブルトップカラー
+admin.product.class_category_tvboard_set_color: テレビボードセットカラー
+admin.product.class_category_tender_task_color: テンダーデスクカラー名
+admin.product.category.image: カテゴリ画像
+admin.product.category.image_size: '推奨サイズ : 600px x 600px以上'
+admin.product.category.image__invalid_path: 画像のパスが不正です。
+
+
+# 商品CSV雛形
+admin.product.product_csv.product_id_description: ''
+
+admin.product.product_csv.category_col: 商品カテゴリ
+admin.product.product_csv.category_description: カテゴリを指定します。複数カテゴリの場合、商品カテゴリをカンマ区切りで「"」で囲んでください。
+
+admin.product.product_csv.package_count_col: 梱包数
+admin.product.product_csv.package_count_description: ''
+admin.product.product_csv.assembly_time_col: 組み立て時間
+admin.product.product_csv.assembly_time_description: ''
+admin.product.product_csv.brand_col: ブランド
+admin.product.product_csv.brand_description: ''
+admin.product.product_csv.color_status_col: 'カラーステータス'
+admin.product.product_csv.color_status_description: '0:無 1: 有を指定します。※必要の為、値は設定してくだい。'
+admin.product.product_csv.hl_flag_col: HLフラグ
+admin.product.product_csv.hl_flag_description: '0:無 1:有を指定します。※必要の為、値は設定してくだい。'
+
+# カテゴリCSV雛形
+admin.product.category_csv.start_id: 開始カテゴリID
+admin.product.category_csv.brand_col: ブランド
+admin.product.category_csv.brand_description: ''
+admin.product.category_csv.img_file_name_col: カテゴリ画像
+admin.product.category_csv.img_file_name_description: ''
+
+#------------------------------------------------------------------------------------
+# ツールチップ
+#------------------------------------------------------------------------------------
+tooltip.product.package_count: 梱包数を制限することができます。
+tooltip.product.assembly_time: 組み立て時間を設定できます。
+tooltip.product.category.image: 複数のカテゴリ画像をドラッグ＆ドロップで登録できます。
+tooltip.product.alert_popup: ポップアップ表示
+tooltip.product.color_status: カラーステータスを設定できます。
+tooltip.product.hl_flag: Hl商品として登録したい場合、チェックしてください。
+
+tooltip.category.csv_start_id: Csvファイルにデータを挿入すると、開始するIDの量がわかります。
+

@@ -465,6 +465,13 @@ if (!class_exists('\Eccube\Entity\Product')) {
         private $search_word;
 
         /**
+         * @var \DateTime
+         *
+         * @ORM\Column(name="delivery_date", type="datetime", nullable=true)
+         */
+        private $delivery_date;
+
+        /**
          * @var string|null
          *
          * @ORM\Column(name="free_area", type="text", nullable=true)
@@ -802,6 +809,30 @@ if (!class_exists('\Eccube\Entity\Product')) {
         public function setUpdateDate($updateDate)
         {
             $this->update_date = $updateDate;
+
+            return $this;
+        }
+
+        /**
+         * Get delivery_date.
+         *
+         * @return \DateTime
+         */
+        public function getDeliveryDate()
+        {
+            return $this->delivery_date;
+        }
+
+        /**
+         * Set delivery_date.
+         *
+         * @param \DateTime $delivery_date
+         *
+         * @return \DateTime
+         */
+        public function setDeliveryDate($delivery_date)
+        {
+            $this->delivery_date = $delivery_date;
 
             return $this;
         }

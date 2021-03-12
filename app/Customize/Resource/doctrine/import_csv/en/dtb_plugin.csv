@@ -1,0 +1,2 @@
+id,name,code,enabled,version,source,initialized,create_date,update_date,discriminator_type
+'1', 'イプシロン決済プラグイン', 'GmoEpsilon4', '0', '1.0.5', '1843', '0', '2020-09-21 09:09:36', '2020-09-21 09:09:36', 'plugin'

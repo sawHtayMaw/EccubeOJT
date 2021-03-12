@@ -1,0 +1,95 @@
+#====================================================================================
+# Common
+#====================================================================================
+common.yes: Yes
+common.no: No
+
+common.mail_address_sample: e.g. sample@sample.com
+
+admin.common.csv_invalid_duplicate: '%name% is duplicated in the line %line%'
+
+
+# Labels related to entity
+admin.common.start_id: You can set category_id starting from with this id.
+
+#------------------------------------------------------------------------------------
+# Home
+#------------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------------
+# Products
+#------------------------------------------------------------------------------------
+front.product.popup.cancel: Cancel
+
+front.shopping.guest_receipt_message: ※Please note that a receipt will not be issued for guest insertion.
+
+#------------------------------------------------------------------------------------
+# Products
+#------------------------------------------------------------------------------------
+# Labels / Messages
+admin.product.package_count: Package Count
+admin.product.assembly_time: Assembly Time
+admin.product.hl_flag: HL Product
+
+admin.product.popup__card_title: Popup Display
+admin.product.popup_status: Popup Status
+admin.product.popup_content: Popup Content
+
+admin.product.color_status: Color Status
+admin.product.class_category_show_name: ShowN Name
+admin.product.class_category_line_color_name: Line Color Name
+admin.product.class_category_color_category: Color Category
+admin.product.class_category_line: Line
+admin.product.class_category_line_color: Line Color
+admin.product.class_category_line2: Line2
+admin.product.class_category_line_color2: Line Color2
+admin.product.class_category_line3: Line3
+admin.product.class_category_line_color3: Line Color3
+admin.product.class_category_grain_direction: Grain Direction
+admin.product.class_category_wood_color1: Wood Color1
+admin.product.class_category_wood_color2: Wood Color2
+admin.product.class_category_worktop_color: Work Top Color
+admin.product.class_category_tabletop_color: Table Top Color
+admin.product.class_category_tvboard_set_color: TV Board Set Color
+admin.product.class_category_tender_task_color: Tender Task Color
+admin.product.category.image: Category Image
+admin.product.category.image_size: 'More than 600px x 600px is recommended'
+admin.product.category.image__invalid_path: Invalid image path.
+
+
+# Product CSV Templates
+admin.product.product_csv.product_id_description: ''
+
+admin.product.product_csv.category_col: Product Category
+admin.product.product_csv.category_description: Specify the category. For multiple categories, please double-quote each category.
+
+admin.product.product_csv.package_count_col: Number of Packages
+admin.product.product_csv.package_count_description: ''
+admin.product.product_csv.assembly_time_col: Assembly Time
+admin.product.product_csv.assembly_time_description: ''
+admin.product.product_csv.brand_col: Brand 
+admin.product.product_csv.brand_description: ''
+admin.product.product_csv.color_status_col: 'Color Status'
+admin.product.product_csv.color_status_description: 'Specify 0: Have color status 1: No color status.*Please set one value as it is necessary.'
+admin.product.product_csv.hl_flag_col: Hl Flag
+admin.product.product_csv.hl_flag_description: 'Specify 0: Hl Product 1: Not HL Product. *Please set one value as it is necessary.'
+
+# Category CSV Templates
+admin.product.category_csv.start_id: Start category ID
+
+admin.product.category_csv.brand_col: Brand
+admin.product.category_csv.brand_description: ''
+admin.product.category_csv.img_file_name_col: Category Image
+admin.product.category_csv.img_file_name_description: ''
+
+#------------------------------------------------------------------------------------
+# ツールチップ
+#------------------------------------------------------------------------------------
+tooltip.product.package_count: This will limit the number of package.
+tooltip.product.assembly_time: This will set the assembly time.
+tooltip.product.color_status: This will set the color status.
+tooltip.product.category.image: You can register multiple category images by drag & drop.
+tooltip.product.alert_popup: Popup Display
+tooltip.product.hl_flag: If you want to register as an Hl product, please check this.
+
+tooltip.category.csv_start_id: When you insert data into csv file, you know how much id to start with.

@@ -1,0 +1,5 @@
+id,creator_id,backend_name,name,sort_no,create_date,update_date,discriminator_type
+"1",,"KH1","KH","1","2017-03-07 10:14:52","2017-03-07 10:14:52","classname"
+"2",,"KH2","サイズ","2","2017-03-07 10:14:52","2017-03-07 10:14:52","classname"
+"3",,"Manoneカラー名","カラー名","4","2017-03-07 10:14:52","2017-03-07 10:14:52","classname"
+"4",,"Graftketカラー名","カラー名","3","2017-03-07 10:14:52","2017-03-07 10:14:52","classname"

@@ -1,0 +1,4 @@
+id,name,sort_no,discriminator_type
+1,kitchenhouse,NULL,brand
+2,manone,NULL,brand
+3,graftekt,NULL,brand

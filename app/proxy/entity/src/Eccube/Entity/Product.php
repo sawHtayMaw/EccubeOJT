@@ -28,7 +28,7 @@ use Doctrine\ORM\Mapping as ORM;
      */
     class Product extends \Eccube\Entity\AbstractEntity
     {
-    use \Customize\Entity\ProductTrait, \Customize\Entity\ProductTrait1;
+    use \Customize\Entity\ProductTrait;
 
         private $_calc = false;
         private $stockFinds = [];
@@ -111,7 +111,7 @@ use Doctrine\ORM\Mapping as ORM;
                                 $this->classCategories1[$ProductClass->getClassCategory1()->getId()] = $ProductClass->getClassCategory1()->getName();
                                 $this->classCategories2[$ProductClass->getClassCategory1()->getId()][$ProductClass->getClassCategory2()->getId()] = $ProductClass->getClassCategory2()->getName();
                             } else {
-                                $this->classCategories1[$ProductClass->getClassCategory1()->getId()] = $ProductClass->getClassCategory1()->getName().($ProductClass->getStockFind() ? '' : trans('front.product.out_of_stock_label'));
+                                $this->classCategories1[$ProductClass->getClassCategory1()->getId()] = $ProductClass->getClassCategory1()->getName() . ($ProductClass->getStockFind() ? '' : trans('front.product.out_of_stock_label'));
                             }
                         }
                     }
@@ -424,11 +424,10 @@ use Doctrine\ORM\Mapping as ORM;
         }
 
         /**
-         * @var integer
+         * @var string
          *
-         * @ORM\Column(name="id", type="integer", options={"unsigned":true})
+         * @ORM\Column(name="id", type="string", length=60, options={"unsigned":true})
          * @ORM\Id
-         * @ORM\GeneratedValue(strategy="IDENTITY")
          */
         private $id;
 
@@ -466,6 +465,13 @@ use Doctrine\ORM\Mapping as ORM;
          * @ORM\Column(name="search_word", type="string", length=4000, nullable=true)
          */
         private $search_word;
+
+        /**
+         * @var \DateTime
+         *
+         * @ORM\Column(name="delivery_date", type="datetime", nullable=true)
+         */
+        private $delivery_date;
 
         /**
          * @var string|null
@@ -604,9 +610,23 @@ use Doctrine\ORM\Mapping as ORM;
         }
 
         /**
+         * Set id.
+         *
+         * @param string $id
+         *
+         * @return Product
+         */
+        public function setId($id)
+        {
+            $this->id = $id;
+
+            return $this;
+        }
+
+        /**
          * Get id.
          *
-         * @return int
+         * @return string
          */
         public function getId()
         {
@@ -791,6 +811,30 @@ use Doctrine\ORM\Mapping as ORM;
         public function setUpdateDate($updateDate)
         {
             $this->update_date = $updateDate;
+
+            return $this;
+        }
+
+        /**
+         * Get delivery_date.
+         *
+         * @return \DateTime
+         */
+        public function getDeliveryDate()
+        {
+            return $this->delivery_date;
+        }
+
+        /**
+         * Set delivery_date.
+         *
+         * @param \DateTime $delivery_date
+         *
+         * @return \DateTime
+         */
+        public function setDeliveryDate($delivery_date)
+        {
+            $this->delivery_date = $delivery_date;
 
             return $this;
         }

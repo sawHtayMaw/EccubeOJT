@@ -4,6 +4,7 @@ namespace Customize\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Eccube\Annotation\EntityExtension;
+use Eccube\Entity\Product;
 
 /**
  * @EntityExtension("Eccube\Entity\Product")
@@ -11,6 +12,14 @@ use Eccube\Annotation\EntityExtension;
 trait ProductTrait
 {
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="id", type="string", length=60, options={"unsigned":true})
+     * @ORM\Id
+     */
+    private $id;
+    
     /**
      * @var \DateTime
      *
@@ -29,6 +38,30 @@ trait ProductTrait
     }
 
     /**
+     * Set id.
+     *
+     * @param string $id
+     *
+     * @return Product
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get id.
+     *
+     * @return string
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
      * Set delivery_date.
      *
      * @param \DateTime $delivery_date
@@ -41,4 +74,5 @@ trait ProductTrait
 
         return $this;
     }
+
 }
